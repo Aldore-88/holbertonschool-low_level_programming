@@ -1,4 +1,4 @@
-#include <stdio.c>
+#include <stdio.h>
 /**
  *main - Entry point
  *Description: printing the size of each data type
