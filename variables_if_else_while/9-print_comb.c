@@ -16,8 +16,8 @@ int main(void)
 	putchar(x);
 	if (x < '9')
 	{
-	putchar(32);
 	putchar(44);
+	putchar(32);
 	}
 
 	x = x + 1;
