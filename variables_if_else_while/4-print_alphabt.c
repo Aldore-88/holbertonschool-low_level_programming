@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
+ *main - Entry point
+ *Description: list alphabet excluding q and e
  *
- *
- *
- *
+ *Return: Always zero (Success)
  */
 int main(void)
 {
