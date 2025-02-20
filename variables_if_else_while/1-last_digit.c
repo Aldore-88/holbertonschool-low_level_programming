@@ -20,12 +20,7 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
 	lastDigit = (n * -1) % 10;
-	/* tried to make an absolute which is not needed
-	if (lastDigit < 0)
-	{
-	lastDigit = (lastDigit * -1);
-	}
-	*/
+	
 	printf("Last digit of %d is %d ", n, lastDigit);
 
 	if (lastDigit > 5)
