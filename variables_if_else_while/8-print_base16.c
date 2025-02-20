@@ -20,7 +20,7 @@ int main(void)
 	x = x + 1;
 	}
 
-	while (y <= 'g')
+	while (y <= 'f')
 	{
 	putchar(y);
 	y = y + 1;
