@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  *main - print alphabet
  *Description: a to z using _putchar user defined header
