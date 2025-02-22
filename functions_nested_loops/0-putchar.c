@@ -5,7 +5,7 @@
  * Description: print _putchar using user defined header main.h
  *
  *
- * Return : 0
+ * Return: 0
  */
 
 int main(void)
