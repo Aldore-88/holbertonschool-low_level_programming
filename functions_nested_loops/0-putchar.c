@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
- *main - print _putchar
- *Description: no stdio.h, user defined header instead -> main.h
+ * main - print _putchar
+ * Description: print _putchar using user defined header main.h
  *
- *Return : always zero (success)
+ *
+ * Return : 0
  */
 
 int main(void)
