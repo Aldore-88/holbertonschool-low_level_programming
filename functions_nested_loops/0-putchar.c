@@ -1,23 +1,22 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
- * main - print _putchar
- * Description: not allowed to use the standard library
+ *main - print _putchar
+ *Description: no stdio.h, user defined header instead -> main.h
  *
- * Return : always zero (success)
+ *Return : always zero (success)
  */
 
 int main(void)
 {
-	char str[8] = "_putchar";
+	char word[8] = "_putchar";
 	int x = 0;
 
 	while (x <= 7)
 	{
-		putchar(str[x]);
+		_putchar(word[x]);
 		x = x + 1;
 	}
 
-	putchar ('\n');
+	_putchar('\n');
 	return (0);
 }
