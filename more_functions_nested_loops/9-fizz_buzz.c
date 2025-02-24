@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - counting to 100 
+ * main - counting to 100
  *
  *
  * Return: 0
@@ -15,12 +15,12 @@ int main(void)
 	{
 		if (i % 15 == 0)
 		{
-			printf ("FizzBuzz ");
+			printf("FizzBuzz ");
 			i = i + 1;
 		}
 		if (i % 5 == 0)
 		{
-			printf ("Buzz ");
+			printf("Buzz ");
 			i = i + 1;
 		}
 		if (i % 3 == 0)
