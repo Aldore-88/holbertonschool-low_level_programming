@@ -18,7 +18,7 @@ void print_triangle(int size)
 		{
 			if ((row + 1) < (size - col))
 			{
-				_putchar('.');
+				_putchar(' ');
 				row = row + 1;
 			}
 			else
