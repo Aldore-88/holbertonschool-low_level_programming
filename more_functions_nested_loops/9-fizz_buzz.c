@@ -31,6 +31,7 @@ int main(void)
 		}
 		i = i + 1;
 	}
+	printf("\n");
 
 	return (0);
 }
