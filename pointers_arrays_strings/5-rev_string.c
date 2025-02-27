@@ -8,24 +8,26 @@
 void rev_string(char *s)
 {
 	int x;
-	int y;
+	int temp;
+	int max_val;
 
 	x = 0;
-	y = 0;
 
 	while (s[x] != '\0')
 	{
-		copy[y] = s[x];
 		x = x + 1;
-		y = y + 1;
 	}
+	max_val = x - 1;
+/*get middle value, also need to account for odd char*/
 
 	x = 0;
-	while (y >= 0)
+
+/*swap using temp char*/
+	while (x < (max_val - x))
 	{
-		s[x] = copy [y];
-		x = x - 1;
-		y = y - 1;
+	temp = s[x];
+	s[x] = s[max_val - x];
+	s[max_val - x] = temp;
+	x = x + 1;
 	}
-		
 }
