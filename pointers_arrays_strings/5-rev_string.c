@@ -10,6 +10,8 @@ void rev_string(char *s)
 	int x;
 	int temp;
 	int max_val;
+	int s;
+	int s*
 
 	x = 0;
 
