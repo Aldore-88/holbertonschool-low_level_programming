@@ -18,7 +18,7 @@ char *_strcpy(char *dest, char *src)
 	{
 		max = max + 1;
 	}
-	
+
 	while (count <= max)
 	{
 		dest[count] = src[count];
