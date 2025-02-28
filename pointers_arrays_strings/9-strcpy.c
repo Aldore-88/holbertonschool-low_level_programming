@@ -10,11 +10,16 @@ char *_strcpy(char *dest, char *src)
 {
 	int count;
 	int max;
-	
-	count = 0;
-	max = 98;
 
-	while (src[count] != '0' && count < max)
+	count = 0;
+	max = 0;
+
+	while (src[max] != '\0')
+	{
+		max = max + 1;
+	}
+	
+	while (count <= max)
 	{
 		dest[count] = src[count];
 		count = count + 1;
