@@ -5,7 +5,7 @@
  *convert char to int when adding
  *counts the first set of numbers on the string
  *@s: input string
- *
+ *Return: value num with sign
  */
 int _atoi(char *s)
 {
