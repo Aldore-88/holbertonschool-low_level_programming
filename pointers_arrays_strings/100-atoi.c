@@ -11,28 +11,30 @@ int _atoi(char *s)
 {
 	int sign;
 	int num_start;
-	int num;
+	unsigned int num;
+	int count;
 
 	sign = 1;
 	num_start = 0;
 	num = 0;
+	count = 0;
 
-	while (*s++)
+	while (s[count] != '\0')
 	{
-		if (*s == '-' && num_start == 0)
+		if (s[count] == '-' && num_start == 0)
 		{
 			sign = sign * -1;
 		}
-		else if (*s >= '0' && *s <= '9')
+		else if (s[count] >= '0' && s[count] <= '9')
 		{
 			num_start = 1;
-			num = (num * 10) + (*s - '0');
+			num = (num * 10) + (s[count] - '0');
 		}
-		else if ((*s <= '0' || *s >= '9') && num_start == 1)
+		else if ((s[count] < '0' || s[count] > '9') && num_start == 1)
 		{
 			break;
 		}
-
+		count = count + 1;
 	}
 	return (num * sign);
 }
