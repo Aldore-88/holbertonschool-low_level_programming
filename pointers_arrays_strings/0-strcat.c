@@ -3,8 +3,9 @@
  *_strcat - string catalate? put strings together
  *@dest: pointer destination
  *@src: pointer source
+ *Return: value of dest
  */
-char *_strcat(char *dest,char *src)
+char *_strcat(char *dest, char *src)
 {
 	int i;
 	int j;
@@ -22,5 +23,5 @@ char *_strcat(char *dest,char *src)
 		j = j + 1;
 		i = i + 1;
 	}
-	return(dest);
+	return (dest);
 }
