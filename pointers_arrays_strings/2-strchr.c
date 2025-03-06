@@ -17,7 +17,7 @@ char *_strchr(char *s, char c)
 		}
 		counter++;
 	}
-	if (s[counter] == '\0')
+	if (c == '\0')
 	{
 		return (s + counter);
 	}
