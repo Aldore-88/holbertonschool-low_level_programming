@@ -9,11 +9,15 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int count = 0;
-	int max = 4;
+	int max = 0;
 	int iterate;
 	int encounter = 0;
 	int total = 0;
 
+	while (s[max] != '\0')
+	{
+		max = max + 1;
+	}
 	while (s[count] != '\0')
 	{
 		iterate = 0;
