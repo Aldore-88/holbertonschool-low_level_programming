@@ -1,9 +1,9 @@
 #include "main.h"
 #include <stdio.h>
 /**
- *
- *
- *
+ * print_diagsums - sum diagonal
+ * @a: array (is in a single array instead of 2D)
+ * @size: size of "2D" array
  */
 void print_diagsums(int *a, int size)
 {
