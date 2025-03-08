@@ -30,7 +30,7 @@ char *_strstr(char *haystack, char *needle)
 
 		if (iterate == n_max && needle[iterate] == '\0')
 		{
-			return (haystack + counter - iterate); /*completed full reaeing of needle*/
+			return (&haystack[counter - iterate]); /*completed full reaeing of needle*/
 		}
 	}
 	return ('\0');
