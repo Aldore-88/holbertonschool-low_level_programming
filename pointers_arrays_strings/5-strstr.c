@@ -10,6 +10,7 @@ char *_strstr(char *haystack, char *needle)
 	int counter = 0;
 	int iterate = 0;
 	int n_max = 0;
+	int word_start = 0;
 
 	while (needle[n_max] != '\0')
 	{
@@ -30,7 +31,7 @@ char *_strstr(char *haystack, char *needle)
 
 		if (iterate == n_max && needle[iterate] == '\0')
 		{
-			return (&haystack[counter - iterate]); /*completed full reaeing of needle*/
+			return (&haystack[word_start]); /*completed full reaeing of needle*/
 		}
 	}
 	return ('\0');
