@@ -33,5 +33,5 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack + counter - iterate); /*completed full reaeing of needle*/
 		}
 	}
-	return (0);
+	return ('\0');
 }
