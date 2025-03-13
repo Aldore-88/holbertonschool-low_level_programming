@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  * error - error function
- *
+ * Return: 1 for error
  */
 
 int error(void)
@@ -63,6 +63,6 @@ int main(int argc, char *argv[])
 		total = total + atoi(argv[counter]);
 		counter = counter + 1;
 	}
-	printf ("%d\n",total);
+	printf("%d\n", total);
 	return (0);
 }
