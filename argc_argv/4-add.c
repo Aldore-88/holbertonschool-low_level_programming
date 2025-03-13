@@ -3,13 +3,13 @@
 #include <stdlib.h>
 /**
  * error - error function
- * Return: 1 for error
+ * Return: 1 for error and exit
  */
 
 int error(void)
 {
 	printf("Error\n");
-	return (1);
+	exit(1);
 }
 
 /**
