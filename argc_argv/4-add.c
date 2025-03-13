@@ -52,11 +52,6 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	if ((argc == 1)/*not digit print error*/)
-	{
-		error();
-	}
-
 	while (counter < argc) /*add all numbers together*/
 	{
 		int_checker(argv[counter]);
