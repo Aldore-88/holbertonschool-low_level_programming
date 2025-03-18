@@ -37,6 +37,15 @@ char *str_concat(char *s1, char *s2)
 	max1 = str_length(s1);
 	max2 = str_length(s2);
 	i = 0;
+	
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 
 	array = malloc((max1 + max2 + 1) * sizeof(char));
 	if (array == NULL)
