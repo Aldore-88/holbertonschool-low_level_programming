@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * _strdup - duplicates string
- * @str: string to duplicate
+ * @str: string to duplicate - remember null value at end of string
  * Return: returns string array of new_str
  *
  */
