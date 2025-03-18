@@ -37,7 +37,7 @@ char *str_concat(char *s1, char *s2)
 	max1 = str_length(s1);
 	max2 = str_length(s2);
 	i = 0;
-	
+
 	if (s1 == NULL)
 	{
 		s1 = "";
@@ -58,13 +58,12 @@ char *str_concat(char *s1, char *s2)
 		if (i < max1)
 		{
 			array[i] = s1[i];
-			i = i + 1;
 		}
 		else if (i >= max1)
 		{
 			array[i] = s2[i - max1];
-			i = i + 1;
 		}
+		i = i + 1;
 	}
 	array[i] = '\0';
 	return (array);
