@@ -66,5 +66,6 @@ char *str_concat(char *s1, char *s2)
 			i = i + 1;
 		}
 	}
+	array[i] = '\0';
 	return (array);
 }
