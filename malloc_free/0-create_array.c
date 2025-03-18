@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
+ * create_array - creates array of char c for size slots in memory
+ * @size: size of array
+ * @c: char in array
  *
- *
- *
+ * Return: Array
  *
  */
 char *create_array(unsigned int size, char c)
