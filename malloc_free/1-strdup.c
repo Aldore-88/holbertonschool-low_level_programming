@@ -31,7 +31,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	while (i < max)
+	while (i <= max)
 	{
 		new_str[i] = str[i];
 			i = i + 1;
