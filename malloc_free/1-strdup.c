@@ -15,13 +15,18 @@ char *_strdup(char *str)
 	max = 0;
 	i = 0;
 
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+
 	while (str[max] != '\0')
 	{
 		max = max + 1;
 	}
 
 	new_str = malloc(max * sizeof(char));
-	if (str == NULL || new_str == NULL)
+	if (new_str == NULL)
 	{
 		return (NULL);
 	}
