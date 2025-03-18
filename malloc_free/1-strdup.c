@@ -12,6 +12,9 @@ char *_strdup(char *str)
 	int max;
 	int i;
 
+	max = 0;
+	i = 0;
+
 	while (str[max] != '\0')
 	{
 		max = max + 1;
