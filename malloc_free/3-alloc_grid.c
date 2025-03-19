@@ -7,6 +7,8 @@
  * @height: height value of grid
  * Return: array
  *
+ * Description: Malloc the first array, at each location malloc second array
+ * at each of the first array points
  */
 int **alloc_grid(int width, int height)
 {
@@ -18,11 +20,7 @@ int **alloc_grid(int width, int height)
 	{
 		return (NULL);
 	}
-	/*malloc the first array, at each location malloc the second array*/
-	/* at each of the first array points*/
-
 	array = malloc(height * sizeof(int *));
-	/*chck if broken*/
 	if (array == NULL)
 	{
 		return (NULL);
@@ -32,9 +30,16 @@ int **alloc_grid(int width, int height)
 	while (y < height)
 	{
 		array[y] = malloc(width * sizeof(int));
-		/*check if broken*/
+		/*check if broken - if null free everything*/
 		if (array[y] == NULL)
 		{
+			x = 0;
+			while (x < y)
+			{
+				free(array[y]);
+				x = x + 1;
+			}
+			free(array);
 			return (NULL);
 		}
 
