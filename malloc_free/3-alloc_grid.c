@@ -43,6 +43,7 @@ int **alloc_grid(int width, int height)
 			return (NULL);
 		}
 
+		x = 0;
 		while (x < width) /*populate*/
 		{
 			array[y][x] = 0;
