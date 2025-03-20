@@ -2,15 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * calloc - free memory then allocate
+ * calloc - allocate memory then clear assigning all to 0
+ * @nmemb: number of memory bytes
+ * @size: size of bits
+ * Return: array
  *
- *
- *
- * 
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int *mem;
+	char *mem;
+	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -21,6 +22,13 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (mem == NULL)
 	{
 		return (NULL);
+	}
+
+	i = 0;
+	while (i < nmemb * size)
+	{
+		mem[i] = 0;
+		i = i + 1;
 	}
 
 	return (mem);

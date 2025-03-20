@@ -53,7 +53,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	str_check(s1);
 	str_check(s2);
 
-	if (n > s2_len)
+	if (n >= s2_len)
 	{
 		n = s2_len; /*take the smaller value of both*/
 	}
