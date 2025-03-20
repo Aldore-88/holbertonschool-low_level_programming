@@ -16,18 +16,23 @@ char str_check(char *s)
 	}
 	return (0);
 }
-
+/**
+ * _strlen - string length
+ * @x: character string
+ * Return: i length of string
+ *
+ */
 unsigned int _strlen(char *x)
 {
 	int i;
-	
+
 	i = 0;
 
 	while (x[i] != '\0')
 	{
 		i = i + 1;
 	}
-	return (i);
+	return (i - 1);
 }
 
 /**
@@ -53,7 +58,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = s2_len; /*take the smaller value of both*/
 	}
 
-	total_len = sizeof(char) * (s1_len + n);
+	total_len = sizeof(char) * (s1_len + n + 1);
 	str = malloc(total_len);
 	if (str == NULL)
 	{
