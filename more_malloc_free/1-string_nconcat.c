@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 /**
  * str_check - check string malloc
  * @s: string input
@@ -18,6 +17,19 @@ char str_check(char *s)
 	return (0);
 }
 
+unsigned int _strlen(char *x)
+{
+	int i;
+	
+	i = 0;
+
+	while (x[i] != '\0')
+	{
+		i = i + 1;
+	}
+	return (i);
+}
+
 /**
  * string_nconcat - concat 2 strings together n char of s2
  * @s1: string 1
@@ -30,8 +42,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	unsigned int i, j, total_len;
-	unsigned int s1_len = strlen(s1);
-	unsigned int s2_len = strlen(s2);
+	unsigned int s1_len = _strlen(s1);
+	unsigned int s2_len = _strlen(s2);
 
 	str_check(s1);
 	str_check(s2);
