@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * calloc - allocate memory then clear assigning all to 0
+ * _calloc - allocate memory then clear assigning all to 0
  * @nmemb: number of memory bytes
  * @size: size of bits
  * Return: array
