@@ -58,7 +58,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = s2_len; /*take the smaller value of both*/
 	}
 
-	total_len = sizeof(char) * (s1_len + n);
+	total_len = sizeof(char) * (s1_len + n + 1);
 	str = malloc(total_len);
 	if (str == NULL)
 	{
