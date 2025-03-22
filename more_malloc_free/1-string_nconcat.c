@@ -32,7 +32,7 @@ unsigned int _strlen(char *x)
 	{
 		i = i + 1;
 	}
-	return (i - 1);
+	return (i); /*index is 1 less than count (+1 to count null)*/
 }
 
 /**
