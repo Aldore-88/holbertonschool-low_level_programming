@@ -2,21 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * str_check - check string malloc
- * @s: string input
- * Return: 0 success
- *
- *
- */
-char str_check(char *s)
-{
-	if (s == NULL)
-	{
-		s = "";
-	}
-	return (0);
-}
-/**
  * _strlen - string length
  * @x: character string
  * Return: i length of string
@@ -47,38 +32,41 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
 	unsigned int i, j, total_len;
-	unsigned int s1_len = _strlen(s1);
-	unsigned int s2_len = _strlen(s2);
+	unsigned int s1_len;
+	unsigned int s2_len;
 
-	str_check(s1);
-	str_check(s2);
+	s1_len = _strlen(s1);
+	s2_len = _strlen(s2);
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	if (n >= s2_len)
 	{
 		n = s2_len; /*take the smaller value of both*/
 	}
 
-	total_len = sizeof(char) * (s1_len + n + 1);
-	str = malloc(total_len);
+	total_len = (s1_len + n + 1);
+	str = malloc(total_len * sizeof(char));
 	if (str == NULL)
 	{
 		return (NULL);
 	}
 	i = 0;
-	while (i < total_len)
+
+	while (s1[i] != '\0')
 	{
-		while (s1[i] != '\0')
-		{
-			str[i] = s1[i];
-			i = i + 1;
-		}
-		j = 0;
-		while (j < n) /*smaller of n or s2*/
-		{
-			str[i] = s2[j];
-			i = i + 1;
-			j = j + 1;
-		}
+		str[i] = s1[i];
+		i = i + 1;
+	}
+	j = 0;
+	while (j < n) /*smaller of n or s2*/
+	{
+		str[i] = s2[j];
+		i = i + 1;
+		j = j + 1;	
 	}
 	str[i] = '\0';
 	return (str);
