@@ -1,8 +1,8 @@
 #include "dog.h"
 #include <stdio.h>
 /**
- *
- *
+ * print_dog - print dog credentials
+ * @d: struct dog d
  *
  *
  */
