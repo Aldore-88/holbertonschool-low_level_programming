@@ -7,7 +7,10 @@
  */
 void free_dog(dog_t *d)
 {
-	free(d->name); /*why not age?*/
-	free(d->owner);
-	free(d);
+	if (d != NULL) /*dont run when there is a NULL passed*/
+	{
+		free(d->name); /*why not age?*/
+		free(d->owner);
+		free(d);
+	}
 }
