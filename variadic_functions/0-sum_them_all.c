@@ -2,7 +2,7 @@
 #include <stdarg.h>
 /**
  * sum_them_all - summing all elements
- * @n: n variables 
+ * @n: n variables
  * Return: sum of input
  *
  */
