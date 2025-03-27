@@ -1,9 +1,9 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 /**
- *
- *
- *
+ * sum_them_all - summing all elements
+ * @n: n variables 
+ * Return: sum of input
  *
  */
 int sum_them_all(const unsigned int n, ...)
