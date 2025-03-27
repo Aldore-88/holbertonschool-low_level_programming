@@ -1,4 +1,5 @@
 #include "variadic_functions.h"
+#include <stdarg.h>
 /**
  *
  *
@@ -22,7 +23,7 @@ int sum_them_all(const unsigned int n, ...)
 
 	while (i < n)
 	{
-		sum = sum + va_arg(ptr);
+		sum = sum + va_arg(ptr, int);
 		i = i + 1;
 	}
 	va_end(ptr);
