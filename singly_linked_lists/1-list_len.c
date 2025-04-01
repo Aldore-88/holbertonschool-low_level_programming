@@ -1,7 +1,7 @@
-#include "lists.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "lists.h"
 /**
  * list_len - List length
  * @h: node
