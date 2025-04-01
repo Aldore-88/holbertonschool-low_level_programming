@@ -3,7 +3,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- *
+ * list_len - List length
+ * @h: node
+ * Return: count
  *
  *
  */
