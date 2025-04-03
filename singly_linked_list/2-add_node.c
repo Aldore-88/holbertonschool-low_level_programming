@@ -3,8 +3,9 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- *
- *
+ * len_count - length count function
+ * @str: input string
+ * Return: count
  *
  *
  */
@@ -20,6 +21,14 @@ int len_count(const char *str)
 	}
 	return (count);
 }
+
+/**
+ * add_node - adds node at the beginning
+ * @head: address of the head node
+ * @str: input string
+ *
+ *
+ */
 
 list_t *add_node(list_t **head, const char *str) 
 {	/*inputint the address of head, and a string*/
