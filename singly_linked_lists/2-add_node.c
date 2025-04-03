@@ -30,7 +30,7 @@ int len_count(const char *str)
  *
  */
 
-list_t *add_node(list_t **head, const char *str) 
+list_t *add_node(list_t **head, const char *str)
 {	/*inputint the address of head, and a string*/
 	/*adding node before the head node*/
 	/*string goes to node string, coutning the length of*/
