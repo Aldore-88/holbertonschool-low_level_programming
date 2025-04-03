@@ -40,7 +40,10 @@ list_t *add_node(list_t **head, const char *str)
 	if (str != NULL) /*its is calling each time so a loop is not required*/
 	{
 		new_node = malloc(sizeof(list_t));
-
+		if (new_node == NULL)
+		{
+			free(new_node);
+		}
 		new_node->str = strdup(str);
 		new_node->len = len_count(str);
 		new_node->next = *head; /* *head is already input as the address*/
