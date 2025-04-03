@@ -11,20 +11,21 @@
 int len_count(const char *str)
 {
 	int count;
-	
+
 	count = 0;
 
-	while (str[count] != NULL)
+	while (str[count] != '\0')
 	{
 		count = count + 1;
 	}
 	return (count);
 }
 
-list_t *add_node(list_t **head, const char *str) /*inputint the address of head, and a string*/
-{
+list_t *add_node(list_t **head, const char *str) 
+{	/*inputint the address of head, and a string*/
 	/*adding node before the head node*/
-	/*string goes to node string, coutning the length of the string into len, node pointing to next node*/
+	/*string goes to node string, coutning the length of*/
+	/*the string into len, node pointing to next node*/
 	list_t *new_node;
 
 	if (str != NULL) /*its is calling each time so a loop is not required*/
@@ -37,5 +38,5 @@ list_t *add_node(list_t **head, const char *str) /*inputint the address of head,
 
 		*head = new_node;
 	}
-	return (new_node)
+	return (new_node);
 }
