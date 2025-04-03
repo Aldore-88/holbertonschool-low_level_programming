@@ -26,7 +26,7 @@ int len_count(const char *str)
  * add_node - adds node at the beginning
  * @head: address of the head node
  * @str: input string
- *
+ * Return: new_node
  *
  */
 
