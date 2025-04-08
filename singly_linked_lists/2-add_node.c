@@ -48,7 +48,7 @@ list_t *add_node(list_t **head, const char *str)
 		new_node->str = strdup(str);
 		new_node->len = len_count(str);
 		new_node->next = *head; /* *head is already input as the address*/
-
+		/*updates the head to new_node*/
 		*head = new_node;
 	}
 	return (new_node);

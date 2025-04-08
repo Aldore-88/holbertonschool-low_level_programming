@@ -57,4 +57,5 @@ list_t *add_node_end(list_t **head, const char *str)
 		temp->next = new_node; /*points to the address of new_node*/
 	}
 	return (*head);
+	free(new_node);
 }
