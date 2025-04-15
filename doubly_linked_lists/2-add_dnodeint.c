@@ -9,12 +9,14 @@
  *
  * Return: return new_node
  */
-dlistint_t *add_dnodeint(dlistint_t **head, const int n )
+dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	/*n into node
-	 * prev = null
-	 * next => head->next
-	 * head = new_node*/
+/*
+ * n into node
+ * prev = null
+ * next => head->next
+ * head = new_node
+ */
 
 	dlistint_t *new_node;
 
@@ -28,7 +30,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n )
 	new_node->prev = NULL;
 	new_node->next = *head; /*takes value of head-next??*/
 
-	*head = new_node; /*creates head to be new_node*/
+	if (head != NULL)
+	{
+		head = new_node;
+	}
+
+	*head = new_node; /**/
 
 	return (new_node);
+	free(new_node);
 }
