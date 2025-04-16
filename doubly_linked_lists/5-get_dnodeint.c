@@ -13,7 +13,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 
 	node_temp = head;
 	count = 0;
-	
+
 	if (head == NULL)
 	{
 		return (NULL);
