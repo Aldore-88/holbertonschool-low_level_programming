@@ -14,6 +14,11 @@ unsigned int binary_to_uint(const char *b)
 	binary_num = 0;
 	index = 0;
 
+	if (b == NULL)
+	{
+		return (0);
+	}
+
 	while (b[index] != '\0')
 	{
 		/*check if it is 1 or 0 if not then return(0)*/
