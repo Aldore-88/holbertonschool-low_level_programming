@@ -22,7 +22,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 			count = count + 1;
 		}
 		comparison = comparison >> 1;
-	}	
+	}
 	return (count);
-	
 }
