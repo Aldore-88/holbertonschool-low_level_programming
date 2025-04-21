@@ -12,11 +12,14 @@ int get_bit(unsigned long int n, unsigned int index)
 	unsigned int count;
 
 	count = 0;
-
+	if (sizeof(n) * 8)
+	{
+		return (-1);
+	}
 	while (count < index)
 	{/*shift bits up to index*/
 		n = n >> 1;
 		count = count + 1;
 	}
-	return (n & 1); 
+	return (n & 1);
 }
